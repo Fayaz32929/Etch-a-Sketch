@@ -6,6 +6,9 @@ for(let i= 0 ; i < gridCount ; i++){
 
     for (let j = 0; j< gridCount ; j++){
     let td = document.createElement("td")
+    td.addEventListener("mouseenter",(e)=>{
+        e.target.style.background = "red"
+    })
    tr.appendChild(td)
 }
     table.appendChild(tr)
